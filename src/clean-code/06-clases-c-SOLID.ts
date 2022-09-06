@@ -76,18 +76,18 @@
 
 
   interface UserSettingProps {
-    birthDate         : Date;
+    birthDate        : Date;
     email            : string;
     gender           : Gender;
     lastOpneFolder   : string;
-    nombre             : string;
+    nombre           : string;
     role             : string;
     workingDirectory : string;
   }
 
   class UserSettings {
-    public persona: Person;
-    public user   : User;
+    public persona : Person;
+    public user    : User;
     public settings: Settings;
 
     constructor({

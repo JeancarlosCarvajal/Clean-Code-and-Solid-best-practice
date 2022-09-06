@@ -16,8 +16,8 @@
 
     // opcion 2. mas corta resumida
     constructor( 
-      public name: string,
-      public gender: Gender,
+      public name    : string,
+      public gender  : Gender,
       public birthDay: Date,
     ){} 
   }
@@ -31,7 +31,7 @@
     
     constructor(
       public email: string,
-      public role: string,
+      public role : string,
       name: string,
       gender: Gender,
       birthDay: Date,

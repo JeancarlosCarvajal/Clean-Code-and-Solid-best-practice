@@ -7,7 +7,7 @@
   interface PersonProps {
     birthDate : Date;
     gender    : Gender;
-    nombre      : string;
+    nombre    : string;
   }
 
   class Person {
@@ -29,7 +29,7 @@
     birthDate : Date;
     email     : string;
     gender    : Gender;
-    nombre      : string;
+    nombre    : string;
     role      : string;
   }
 
@@ -41,15 +41,19 @@
     
     constructor({
       birthDate,
-      email,
       gender,
       nombre,
+      email,
       role,
     }: UserProps ){
       // el super llama al constructor del padre (Person)
       // aqui debo cumplir todo el requisito del constructor del padre
       // con el super se asigna el valor del padre al hijo
-      super({nombre, gender, birthDate});
+      super({
+        birthDate,
+        gender, 
+        nombre, 
+      });
       this.lastAccess = new Date();
       this.email = email;
       this.role = role;
@@ -63,11 +67,11 @@
 
 
   interface UserSettingProps {
-    birthDate         : Date;
+    birthDate        : Date;
     email            : string;
     gender           : Gender;
     lastOpneFolder   : string;
-    nombre             : string;
+    nombre           : string;
     role             : string;
     workingDirectory : string;
   }
@@ -81,12 +85,18 @@
       birthDate,
       email,
       gender,
-      lastOpneFolder,
       nombre,
       role,
+      lastOpneFolder,
       workingDirectory,
     }: UserSettingProps){
-      super({birthDate, email, gender, nombre, role});
+      super({
+        birthDate, 
+        email, 
+        gender, 
+        nombre, 
+        role
+      });
       this.workingDirectory = workingDirectory;
       this.lastOpneFolder = lastOpneFolder;
     }
