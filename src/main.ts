@@ -1,5 +1,5 @@
 import './style.css';
-import './solid/01-srp';  
+import './solid/03-liskov-a';  
 import './test.js';  
 
 const app = document.querySelector<HTMLDivElement>('#app')!
