@@ -1,37 +1,55 @@
 
+// abstract es para que tenga todos los metodos y propiedades necesarias
+export abstract class Vehicle {
+  abstract getNumberOfSeats(): number;
+}
 
-export class Tesla {
+export class Tesla extends Vehicle {
+  getNumberOfSeats(): number {
+    return this.numberOfSeats;
+  }
 
-  constructor( private numberOfSeats: number ) {}
-
-  getNumberOfTeslaSeats() {
-      return this.numberOfSeats;
+  constructor(private numberOfSeats: number) {
+    super();
   }
 }
 
-export class Audi {
+export class Audi extends Vehicle {
+  getNumberOfSeats(): number {
+    return this.numberOfSeats;
+  }
 
-  constructor( private numberOfSeats: number ) {}
-
-  getNumberOfAudiSeats() {
-      return this.numberOfSeats;
+  constructor(private numberOfSeats: number) {
+    super();
   }
 }
 
-export class Toyota {
+export class Toyota extends Vehicle {
+  getNumberOfSeats(): number {
+    return this.numberOfSeats;
+  }
 
-  constructor( private numberOfSeats: number ) {}
-
-  getNumberOfToyotaSeats() {
-      return this.numberOfSeats;
+  constructor(private numberOfSeats: number) {
+    super();
   }
 }
 
-export class Honda {
+export class Honda extends Vehicle {
+  getNumberOfSeats(): number {
+    return this.numberOfSeats;
+  }
 
-  constructor( private numberOfSeats: number ) {}
+  constructor(private numberOfSeats: number) {
+    super();
+  }
+}
 
-  getNumberOfHondaSeats() {
-      return this.numberOfSeats;
+export class Ford extends Vehicle {
+  getNumberOfSeats(): number {
+    return this.numberOfSeats;
+  }
+
+  constructor(private numberOfSeats: number) {
+    super();
   }
 }
